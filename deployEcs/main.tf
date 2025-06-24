@@ -44,13 +44,13 @@ data "aws_security_group" "frontend_sg" {
 data "aws_subnet" "public1" {
   filter {
     name   = "tag:Name"
-    values = ["${var.project_name}-public-us-east-2a"]
+    values = ["${var.project_name}-public-us-west-2a"]
   }
 }
 data "aws_subnet" "public2" {
   filter {
     name   = "tag:Name"
-    values = ["${var.project_name}-public-us-east-2b"]
+    values = ["${var.project_name}-public-us-west-2b"]
   }
 }
 
