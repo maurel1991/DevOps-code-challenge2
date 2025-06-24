@@ -61,7 +61,7 @@ pipeline {
             }
         }
 
-         /*stage ('Hold Destroy') {
+        stage ('Hold Destroy') {
             steps {
                 input message: 'Do you really want to destroy the infrastructure?'
             }
@@ -78,6 +78,6 @@ pipeline {
                 docker rmi `docker image ls | grep "end-repo" | awk '{print $1}'`
                 '''
             }
-        }*/
+        }
     }
 }
