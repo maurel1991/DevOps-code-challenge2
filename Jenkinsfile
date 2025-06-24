@@ -51,17 +51,17 @@ pipeline {
             }
         }
 
-        /*stage ('Deploying the app to ECS'){
+        stage ('Deploying the app to ECS'){
             steps{
                 sh '''
-                cd ecs-deployment
+                cd deployEcs
                 terraform init
                 terraform apply -auto-approve
                 '''
             }
         }
 
-         stage ('Hold Destroy') {
+         /*stage ('Hold Destroy') {
             steps {
                 input message: 'Do you really want to destroy the infrastructure?'
             }
