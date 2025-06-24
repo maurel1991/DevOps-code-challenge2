@@ -33,7 +33,7 @@ pipeline {
             }
         }
 
-        /*stage ('Push backend and frontend images to ECR'){
+        stage ('Push backend and frontend images to ECR'){
             steps {
                 sh '''
                 # Authenticate Docker with The frontend ECR repo 
@@ -51,7 +51,7 @@ pipeline {
             }
         }
 
-        stage ('Deploying the app to ECS'){
+        /*stage ('Deploying the app to ECS'){
             steps{
                 sh '''
                 cd ecs-deployment
