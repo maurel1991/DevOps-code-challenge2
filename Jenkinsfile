@@ -70,7 +70,7 @@ pipeline {
         stage ('Destroy Infrastructure') {
             steps {
                 sh '''
-                cd ecs-deployment
+                cd deployEcs
                 terraform destroy -auto-approve
                 cd ..
                 cd infra
